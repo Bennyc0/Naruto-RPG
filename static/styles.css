@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    }
+
+a {
+    color: white;
+    padding: 5px;
+    }
+
+a :hover{
+    transition-duration: 1s;
+    background-color: blue;
+    box-shadow: 5px 5px 5px aquamarine;
+    }
+
+.a-box {
+    margin: 10px;
+    }
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    }
+
+.container {
+    width: auto;
+    padding: 20px;
+    border: 2px;
+    border-radius: 5px;
+    border-style: double;
+    }
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.fields {
+    display: flex;
+    justify-content: center;
+    }
+
+.fields form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    }
+
+.fields form input{
+    margin: 5px;
+    }
+
+.field-row {
+    margin: 5px;
+    }
+
+#msg {
+    border: 2px;
+    color: red;
+    }
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: space-between;
+    margin: 10px;
+    }
+
+.footer-images img{
+    width: 10%;
+    height: auto;
+    }
+
+.info-pages {
+    text-align: center;
+    }
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+.btn2 {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    }
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    }
