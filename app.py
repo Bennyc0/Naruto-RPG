@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-import db_functions as dbf
+import database_functions as dbf
 
 app = Flask(__name__)
 logged_in_username = ""
@@ -47,3 +47,6 @@ def logout():
     logged_in_username = ""
 
     return render_template('login.html', message='Successfully Logged Out!')
+
+if __name__== '__main__':
+    app.run(debug=True, host ='0.0.0.0', port = 9000)
