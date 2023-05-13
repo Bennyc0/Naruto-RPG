@@ -47,3 +47,4 @@ def logout():
     logged_in_username = ""
 
     return render_template('login.html', message='Successfully Logged Out!')
+#comment
