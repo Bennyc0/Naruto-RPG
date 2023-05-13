@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-import db_functions as dbf
+import database_functions as dbf
 
 app = Flask(__name__)
 logged_in_username = ""
