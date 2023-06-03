@@ -1,3 +1,5 @@
+/* Overhaul CSS - To be determined */
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -6,11 +8,6 @@ body {
     height: 100vh;
     background: radial-gradient(ellipse at bottom, #0D1E31, #111);
     overflow: hidden;
-}
-
-.star {
-    transform: rotateZ(40deg);
-    
 }
 
 a {
