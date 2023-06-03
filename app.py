@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import database_functions as dbf\
 
 app = Flask(__name__)
-logged_in_username = ""
-
+logged_in_username = " "
 
 @app.route('/')
 def index():
@@ -37,7 +36,8 @@ def store_user():
     email = request.form['email']
     password = request.form['password']
 
-    dbf.sign_up_user(username, email, password)
+    if dbf.validate_user(email, password) == "":
+        dbf.sign_up_user(username, email, password)
 
     return redirect(url_for('index'))
 

@@ -1,0 +1,16 @@
+# Fire Style: Fireball Jutsu, 巳(Snake), 寅(Tiger), 申(Monkey), 亥(Boar), 午(Horse), 寅(Tiger)
+# Fire Style: Fireball Jutsu, 巳(Snake), 未(Ram), 申(Monkey), 亥(Boar), 午(Horse), 寅(Tiger)
+# Clone Jutsu: 未(Ram), 巳(Snake), 寅(Tiger)
+# Summoning Jutsu: 戌(Dog), 亥(Boar), 酉(Bird), 申(Monkey), 未(Ram)
+# Summoning: Earth Style: Fanged Pursuit Jutsu, 寅(Tiger), 巳(Snake), 辰(Dragon), 戌(Dog)
+# Fire Style: Phoenix Flower Jutsu, 子(Rat), 寅(Tiger), 戌(Dog), 丑(Ox), 卯(Hare), 寅(Tiger)
+# Water Style: Water Trumpet, 辰(Dragon), 寅(Tiger), 卯(Hare)
+# Summoning Jutsu: Impure World Reincarnation, 寅(Tiger), 巳(Snake), 戌(Dog), 辰(Dragon), 祈(Gassho)
+# Fire Style: Dragon Flame Jutsu, 巳(Snake), 辰(Dragon), 卯(Hare), 寅(Tiger)
+# Water Style: Water Shark Bomb Jutsu, 寅(Tiger), 丑(Ox), 辰(Dragon), 卯(Hare), 酉(Bird), 辰(Dragon), 未(Ram)
+# Sealing Jutsu: Reaper Death Seal, 巳(Snake), 亥(Boar), 未(Ram), 卯(Hare), 戌(Dog), 子(Rat), 酉(Bird), 午(Horse), 巳(Snake), 祈(Gassho)
+# Fire Style: Water Dragon Jutsu, 丑(Ox), 申(Monkey), 卯(Hare), 子(Rat), 亥(Boar), 酉(Bird), 丑(Ox), 午(Horse), 酉(Bird), 子(Rat), 寅(Tiger), 戌(Dog), 寅(Tiger), 巳(Snake), 丑(Ox), 未(Ram), 巳(Snake), 亥(Boar), 未(Ram), 子(Rat), 壬(Mizunoe), 申(Monkey), 酉(Bird), 辰(Dragon), 酉(Bird), 丑(Ox), 午(Horse), 未(Ram), 寅(Tiger), 巳(Snake), 子(Rat), 申(Monkey), 卯(Hare), 亥(Boar), 辰(Dragon), 未(Ram), 子(Rat), 丑(Ox), 申(Monkey), 酉(Bird), 壬(Mizunoe), 子(Rat), 亥(Boar), 酉(Bird)
+# Fire Style: Dragon Flame Bomb, 未(Ram), 午(Horse), 巳(Snake), 辰(Dragon), 子(Rat), 丑(Ox), 寅(Tiger)
+# Substitution Jutsu: 未(Ram), 亥(Boar), 丑(Ox), 戌(Dog), 巳(Snake)
+
+# Note: Gassho is basically two palms together
