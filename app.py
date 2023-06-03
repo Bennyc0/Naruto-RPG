@@ -25,6 +25,9 @@ def login():
     else:
         return render_template('login.html', message='Invalid Gmail or Password, Please Try Again')
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 @app.route('/sign-up')
 def sign_up():

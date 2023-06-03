@@ -1,0 +1,12 @@
+body{
+    background-image: url('https://gifdb.com/images/high/naruto-vs-pain-fight-iz2gria11nd8k8z2.gif');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    text-align: center;
+}
