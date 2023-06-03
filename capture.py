@@ -52,3 +52,13 @@ if result.multi_hand_landmarks:
 # release the webcam and destroy all active windows
 cap.release()
 cv2.destroyAllWindows()
+
+# Predict gesture in Hand Gesture Recognition project
+        	prediction = model.predict([landmarks])
+print(prediction)
+        	classID = np.argmax(prediction)
+        	className = classNames[classID]
+
+  # show the prediction on the frame
+  cv2.putText(frame, className, (10, 50), cv2.FONT_HERSHEY_SIMPLEX,
+               	1, (0,0,255), 2, cv2.LINE_AA)   
