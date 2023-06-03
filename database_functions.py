@@ -3,6 +3,7 @@ import sqlite3
 database_link = "./static/data/database.db"
 
 # User Log In
+# Work in Users stats!
 def validate_user(email, password):
     connect = sqlite3.connect(database_link)
     cursor = connect.cursor()
