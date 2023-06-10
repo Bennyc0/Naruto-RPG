@@ -73,6 +73,7 @@ def home():
 
     return render_template("home.html", current_user=current_user, message=message)
 
+
 # ---------- Battle ----------
 # @app.route("/battle")
 # def battle():
@@ -82,11 +83,13 @@ def home():
 # @app.route("/training")
 # def training():
 
+
 # ---------- Resources ----------
 @app.route("/resources")
 def resources():
     return render_template('resources.html')
 
-# ----------  ----------
+
+# ---------- Something ----------
 if __name__== '__main__':
     app.run(debug=True, host ='0.0.0.0', port = 9000)
