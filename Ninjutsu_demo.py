@@ -225,7 +225,7 @@ def main():
         if key == 99:  # C：印の履歴を消去
             sign_display_queue.clear()
             sign_history_queue.clear()
-        if key == 27:  # ESC：プログラム終了
+        if key == 27 or key == ord('q'):  # ESC：プログラム終了
             break
 
         # 画面反映 #############################################################

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>StarGazer</title>
+    <title>Naurto RPG</title>
     <link rel="icon" type="image/x-icon" href="../static/photos/resources/favicon.ico">
    
     <link href="/static/styles.css" rel="stylesheet">
@@ -15,21 +15,21 @@
 <!-- Please look into combining login and signin into home -->
 <body>
     <div class="content">
-        <h2>Stargazer</h2>
+        <h2>Naruto RPG</h2>
         
         <div class="container">
             <p>Log in as an existing user</p>
             <p id="msg">{{ message }}</p>
     
             <div class="fields">
-                <form action="/login" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email">
+                <form action="/verify-user" method="POST">
+                    <input type="text" name="username" placeholder="Enter your username">
                     <input type="password" name="password" placeholder="Enter your password">
                     <button class="btn" type="submit">Log in</button>
                 </form>
             </div>
            
-            <p>Don't have an account? <a href="/sign-up"><button class="btn">Sign up here!</button></a></p>
+            <p>Don't have an account? <a href="/signup"><button class="btn">Sign up here!</button></a></p>
         </div>
     </div>
 
