@@ -43,8 +43,14 @@ def fight(entity1, entity2):
             Process(target=entity1.damage, args=(entity2,)).start()
             Process(target=entity2.damage, args=(entity1,)).start()
 
+class jutsu 
+
 # All Bosses
-boss1 = entity("Itachi", 100, 10 , 2, 2, ["Punch", "FireBall"])
+boss1 = entity("Orahimaru", 100, 10 , 2, 2, ["FireBall"])
+boss2 = entity("z", 100, 10, 2, 2, [    ])
+
+# Moves
+
 # Test
 place_holder = entity("Player", 10, 2, 2, ["Punch"])
 print(boss1)

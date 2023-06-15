@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-import database_functions as dbf\
+import database_functions as dbf
 
 app = Flask(__name__)
 current_user = " "
@@ -7,7 +7,7 @@ current_user = " "
 # ---------- Index ----------
 @app.route('/')
 def index():
-    return render_template('login.html')
+    return render_template('home.html')
 
 
 # ---------- Login/Signup ----------
@@ -31,7 +31,16 @@ def verify_user():
     if current_user != "":
         return redirect(url_for('home'))
     else:
-        return render_template('login.html', message='Invalid Username or Password, Please Try Again')
+        return render_template('login.html', message='Invalid Gmail or Password, Please Try Again')
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/sign-up')
+def sign_up():
+    return render_template('sign_up.html')
+
 
 @app.route('/store-user', methods=['GET', 'POST'])
 def store_user():
