@@ -256,7 +256,7 @@ def ninjutsu_init():
             jutsu_start_time,
         )
 
-        cv.imshow( "window",debug_image)
+        # cv.imshow( "window",debug_image)
         # FPS adjustment #############################################################
         elapsed_time = time.time() - start_time
         sleep_time = max(0, ((1.0 / fps) - elapsed_time))
