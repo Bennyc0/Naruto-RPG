@@ -7,14 +7,15 @@ import os
 
 class entity:
     # If your confused about the declaring of constructor, it's just setup to have a default, exclucding
-    def __init__(self, name, level = 100, health = random.randint(5,10), attack = random.randint(1,3), defence = random.randint(1,3), skill = ["Punch"]):
-        self.name = name
+    def __init__(self, username, level = 100, health = random.randint(5,10), attack = random.randint(1,3), defence = random.randint(1,3), skills = ["Punch"]):
+        self.username = username
         # Levels are calculated by dividing the value by a 100, 1 level per 100 exp ->
         self.level = level
         self.health = health
         self.attack = attack
         self.defence = defence
-        self.skill = skill
+        self.skills = skills
+        
     def __str__(self):
         # If you try to print the object the following string is returned ->
         return f"\n{self.name}: Level {int(self.level / 100)}, Health {self.health}, Attack {self.attack}, Defence {self.defence},"
