@@ -1,8 +1,14 @@
-{
+[
     {
-    "element": ["Fire", "jp name"],
-    "name": "Fireball jutsu",
-    "attack": 10,
-    "signs": ["symbol1", "symbol2"]
-    }
-}
+        "element": ["火遁", "Fire Style"],
+        "name": ["豪火球の術", "Fireball Jutsu"],
+        "attack": 3,
+        "signs": ["巳", "寅", "申", "亥", "午", "寅"]
+    },
+    {
+        "element": ["火遁", "Fire Style"],
+        "name": ["豪火球の術", "Fireball Jutsu"],
+        "attack": 3,
+        "signs": ["巳", "寅", "申", "亥", "午", "寅"] 
+    } 
+]

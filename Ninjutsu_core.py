@@ -137,7 +137,7 @@ def ninjutsu_init():
     with open('setting/jutsu.csv', encoding='utf8') as f:  
         jutsu = csv.reader(f)
         jutsu = [row for row in jutsu]
-        print(jutsu)
+
 
     # Mark display history and detection history ##############################################
     sign_max_display = 18
