@@ -1,4 +1,4 @@
-{
+[
     { "name": "None", "kanji": "無" },
     { "name": "Ne(Rat)", "kanji": "子" },
     { "name": "Ushi(Ox)", "kanji": "丑" },
@@ -15,4 +15,5 @@
     { "name": "Gassho", "kanji": "祈" },
     { "name": "Unknown", "kanji": "謎" },
     { "name": "Mizunoe", "kanji": "壬" }
-}
+]
+   
