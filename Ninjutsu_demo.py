@@ -124,7 +124,7 @@ def main():
         # providers=['CPUExecutionProvider'],
     )
 
-    # FPS計測モジュール #########################################################
+    # FPS計測モジュール ######################################################### 
     cvFpsCalc = CvFpsCalc()
 
     # フォント読み込み ##########################################################
@@ -139,6 +139,7 @@ def main():
     with open('setting/jutsu.csv', encoding='utf8') as f:  # 術
         jutsu = csv.reader(f)
         jutsu = [row for row in jutsu]
+        print(jutsu)
 
     # 印の表示履歴および、検出履歴 ##############################################
     sign_max_display = 18
