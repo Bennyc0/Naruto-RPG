@@ -133,12 +133,22 @@ def ninjutsu_init():
     # label reading ###########################################################
     with open('static/data/labels.json', 'r') as f: 
         labels = json.load(f)
-        labels = [row for row in jutsu]
+        labels = [item["name"] for item in labels]
 
     with open('static/data/jutsu.json', 'r') as f:  
         jutsu = json.load(f)
-        jutsu = [row for row in jutsu]
-
+        place_holder = []
+        holder = []
+        for row in jutsu:
+            place_holder.extend(row["element"])
+            place_holder.extend(row["name"])
+            place_holder.extend(row["signs"])
+            place_holder.append(row["attack"])
+            holder.append(place_holder)
+            place_holder = []
+        jutsu = holder
+        
+    print(jutsu) 
 
     # Mark display history and detection history ##############################################
     sign_max_display = 18
@@ -246,7 +256,7 @@ def ninjutsu_init():
             jutsu_start_time,
         )
 
-        # here cv.imshow( debug_image)
+        cv.imshow( "window",debug_image)
         # FPS adjustment #############################################################
         elapsed_time = time.time() - start_time
         sleep_time = max(0, ((1.0 / fps) - elapsed_time))
