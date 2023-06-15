@@ -24,7 +24,6 @@ def get_args():
     parser.add_argument("--device", type=int, default=0)
     parser.add_argument("--width", help='cap width', type=int, default=960)
     parser.add_argument("--height", help='cap height', type=int, default=540)
-    parser.add_argument("--file", type=str, default=None)
 
     parser.add_argument("--fps", type=int, default=30)
     parser.add_argument("--skip_frame", type=int, default=0)
@@ -80,15 +79,13 @@ def get_args():
     return args
 
 
-def main():
+def ninjutsu_init():
     # Argument parsing #################################################################
     args = get_args()
 
     cap_width = args.width
     cap_height = args.height
     cap_device = args.device
-    if args.file is not None:  # When using video files
-        cap_device = args.file
 
     fps = args.fps
     skip_frame = args.skip_frame
@@ -108,8 +105,6 @@ def main():
     use_jutsu_lang_en = args.use_jutsu_lang_en
 
     chattering_check = args.chattering_check
-
-    use_fullscreen = args.use_fullscreen
 
     # camera ready ###############################################################
     cap = cv.VideoCapture(cap_device)
@@ -142,6 +137,7 @@ def main():
     with open('setting/jutsu.csv', encoding='utf8') as f:  
         jutsu = csv.reader(f)
         jutsu = [row for row in jutsu]
+        print(jutsu)
 
     # Mark display history and detection history ##############################################
     sign_max_display = 18
@@ -165,10 +161,6 @@ def main():
     jutsu_index = 0  # index of display name
     jutsu_start_time = 0  # Initialization of the start time of the operation name display
     frame_count = 0  # frame number counter
-
-    window_name = 'NARUTO HandSignDetection Ninjutsu Demo'
-    if use_fullscreen:
-        cv.namedWindow(window_name, cv.WINDOW_NORMAL)
 
     while True:
         start_time = time.time()
@@ -252,11 +244,6 @@ def main():
             jutsu_index,
             jutsu_start_time,
         )
-        if use_fullscreen:
-            cv.setWindowProperty(window_name, cv.WND_PROP_FULLSCREEN,
-                                 cv.WINDOW_FULLSCREEN)
-        cv.imshow(window_name, debug_image)
-        # cv.moveWindow(window_name, 100, 100)
 
         # FPS adjustment #############################################################
         elapsed_time = time.time() - start_time
@@ -264,8 +251,6 @@ def main():
         time.sleep(sleep_time)
 
     cap.release()
-    cv.destroyAllWindows()
-
 
 def check_jutsu(
     sign_history_queue,
@@ -278,6 +263,7 @@ def check_jutsu(
     sign_history = ''
     if len(sign_history_queue) > 0:
         for sign_id in sign_history_queue:
+            print(sign_id)
             sign_history = sign_history + labels[sign_id][1]
         for index, signs in enumerate(jutsu):
             if sign_history == ''.join(signs[4:]):
@@ -393,6 +379,4 @@ def draw_debug_image(
 
     return debug_image
 
-
-if __name__ == '__main__':
-    main()
+ninjutsu_init()

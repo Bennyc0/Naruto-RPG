@@ -1,0 +1,18 @@
+{
+    { "name": "None", "kanji": "無" },
+    { "name": "Ne(Rat)", "kanji": "子" },
+    { "name": "Ushi(Ox)", "kanji": "丑" },
+    { "name": "Tora(Tiger)", "kanji": "寅" },
+    { "name": "U(Hare)", "kanji": "卯" },
+    { "name": "Tatsu(Dragon)", "kanji": "辰" },
+    { "name": "Mi(Snake)", "kanji": "巳" },
+    { "name": "Uma(Horse)", "kanji": "午" },
+    { "name": "Hitsuji(Ram)", "kanji": "未" },
+    { "name": "Saru(Monkey)", "kanji": "申" },
+    { "name": "Tori(Bird)", "kanji": "酉" },
+    { "name": "Inu(Dog)", "kanji": "戌" },
+    { "name": "I(Boar)", "kanji": "亥" },
+    { "name": "Gassho", "kanji": "祈" },
+    { "name": "Unknown", "kanji": "謎" },
+    { "name": "Mizunoe", "kanji": "壬" }
+}

@@ -1,0 +1,8 @@
+{
+    {
+    "element": ["Fire", "jp name"],
+    "name": "Fireball jutsu",
+    "attack": 10,
+    "signs": ["symbol1", "symbol2"]
+    }
+}
