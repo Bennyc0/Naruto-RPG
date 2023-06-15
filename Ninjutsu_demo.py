@@ -249,6 +249,7 @@ def main():
             jutsu_index,
             jutsu_start_time,
         )
+
         if use_fullscreen:
             cv.setWindowProperty(window_name, cv.WND_PROP_FULLSCREEN,
                                  cv.WINDOW_FULLSCREEN)
