@@ -6,6 +6,7 @@ import argparse
 import csv
 import time
 import copy
+import json
 from collections import deque
 
 import cv2 as cv
@@ -130,12 +131,12 @@ def ninjutsu_init():
     font_path = 'static/utils/font/衡山毛筆フォント.ttf'
 
     # label reading ###########################################################
-    with open('setting/labels.csv', encoding='utf8') as f: 
-        labels = csv.reader(f)
-        labels = [row for row in labels]
+    with open('static/data/labels.json', 'r') as f: 
+        labels = json.load(f)
+        labels = [row for row in jutsu]
 
-    with open('setting/jutsu.csv', encoding='utf8') as f:  
-        jutsu = csv.reader(f)
+    with open('static/data/jutsu.json', 'r') as f:  
+        jutsu = json.load(f)
         jutsu = [row for row in jutsu]
 
 
@@ -245,6 +246,7 @@ def ninjutsu_init():
             jutsu_start_time,
         )
 
+        # here cv.imshow( debug_image)
         # FPS adjustment #############################################################
         elapsed_time = time.time() - start_time
         sleep_time = max(0, ((1.0 / fps) - elapsed_time))
@@ -263,8 +265,9 @@ def check_jutsu(
     sign_history = ''
     if len(sign_history_queue) > 0:
         for sign_id in sign_history_queue:
-            print(sign_id)
+            print(labels[sign_id][1])
             sign_history = sign_history + labels[sign_id][1]
+            
         for index, signs in enumerate(jutsu):
             if sign_history == ''.join(signs[4:]):
                 jutsu_index = index
