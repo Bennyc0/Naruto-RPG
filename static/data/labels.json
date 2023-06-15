@@ -1,0 +1,19 @@
+[
+    { "name": ["None", "無"] },
+    { "name": ["Ne(Rat)", "子"] },
+    { "name": ["Ushi(Ox)", "丑"] },
+    { "name": ["Tora(Tiger)", "寅"] },
+    { "name": ["U(Hare)", "卯"] },
+    { "name": ["Tatsu(Dragon)", "辰"] },
+    { "name": ["Mi(Snake)", "巳"] },
+    { "name": ["Uma(Horse)", "午"] },
+    { "name": ["Hitsuji(Ram)", "未"] },
+    { "name": ["Saru(Monkey)", "申"] },
+    { "name": ["Tori(Bird)", "酉"] },
+    { "name": ["Inu(Dog)", "戌"] },
+    { "name": ["I(Boar)", "亥"] },
+    { "name": ["Gassho", "祈"] },
+    { "name": ["Unknown", "謎"] },
+    { "name": ["Mizunoe", "壬"] }
+]
+   

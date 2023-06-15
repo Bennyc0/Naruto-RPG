@@ -32,7 +32,7 @@ class entity:
     
     def damage(self, defender):
         print("Attack")
-        defender.health -= 1
+        
         # defender.health =- self.attack - defender.defence + 1
         print(f"{defender.name} is at {defender.health} health!")
 
@@ -43,13 +43,12 @@ def fight(entity1, entity2):
             Process(target=entity1.damage, args=(entity2,)).start()
             Process(target=entity2.damage, args=(entity1,)).start()
 
-class jutsu 
-
 # All Bosses
 boss1 = entity("Orahimaru", 100, 10 , 2, 2, ["FireBall"])
-boss2 = entity("z", 100, 10, 2, 2, [    ])
 
-# Moves
+
+# jutsu initalization
+
 
 # Test
 place_holder = entity("Player", 10, 2, 2, ["Punch"])
