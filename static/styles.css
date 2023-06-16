@@ -19,8 +19,8 @@ a {
 
 a :hover {
     transition-duration: 1s;
-    background-color: blue;
-    box-shadow: 5px 5px 5px aquamarine;
+    background-color: red;
+    box-shadow: 5px 5px 5px crimson;
 }
 
 .a-box {
@@ -34,11 +34,13 @@ a :hover {
 }
 
 .container {
+    background-color: black;
     width: auto;
     padding: 20px;
-    border: 2px;
-    border-radius: 5px;
-    border-style: double;
+    border: 10px;
+    border-radius: 7px;
+    border-style: groove;
+    border-color: crimson;
 }
 
 .edit-container {
@@ -88,7 +90,7 @@ a :hover {
 }
 
 .btn {
-    background-color: DodgerBlue;
+    background-color: red;
     border: none;
     border-radius: 5px;
     color: white;
@@ -107,8 +109,7 @@ a :hover {
     cursor: pointer;
 }
 
-td,
-th {
+td,th {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;

@@ -7,7 +7,7 @@ current_user = " "
 # ---------- Index ----------
 @app.route('/')
 def index():
-    return render_template('home.html')
+    return render_template('login.html')
 
 
 # ---------- Login/Signup ----------
@@ -32,10 +32,6 @@ def verify_user():
         return redirect(url_for('home'))
     else:
         return render_template('login.html', message='Invalid Gmail or Password, Please Try Again')
-
-@app.route('/home')
-def home():
-    return render_template('home.html')
 
 @app.route('/sign-up')
 def sign_up():
@@ -71,7 +67,7 @@ def logout():
 
 
 # ---------- Homepage ----------
-@app.route("/home")
+@app.route('/home')
 def home():
     global current_user
 
